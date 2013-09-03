@@ -69,7 +69,15 @@
           * echo strtolower($hasilnya);
           * echo strtoupper($hasilnya);
           */
-         
+
+        /*
+         * SubString
+         *
+         * $kata= "Aku Adalah Programmer";
+         * MessageWelcome::GetSubString($kata);
+         * it output "Adalah ProgrammerAdala"
+         */
+
 
 
         
@@ -100,7 +108,7 @@
                print $final.'<br>';
                }
             }
-            
+
             function OddEven($bil){
                 if($bil%2 == 0){
                     print $bil.' = genap';
@@ -115,7 +123,7 @@
              * 9
              * 876
              * 54321
-             */             
+             */
             function piramidabilurut($bil){
                 $cetak = $bil*$bil;
                   for($i=1;$i<=$bil;$i++) {
@@ -131,7 +139,7 @@
             
             /*
              * Get Prime Number
-             */           
+             */
             function eratosthenes_sieve($sieve, $n)
             {
                     $i = 2;
@@ -182,9 +190,9 @@
 
                 return array_merge($this->quicksort($left), array($pivot), $this->quicksort($right));
             }
-            
-            
-            
+
+
+
             function preprocessMorrisPratt($pattern, &$nextTable)
             {
                     $i = 0;
@@ -256,6 +264,12 @@
                  }
                                   
                  return $hasil;
+            }
+
+            // SubString String
+            public static function GetSubString($str){
+                echo $hai = substr($str,4);
+                echo $haidx = substr($str,strpos($str,"Adalah"),5);
             }
             
      }
